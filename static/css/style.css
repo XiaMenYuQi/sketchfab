@@ -1,0 +1,148 @@
+@charset "UTF-8";
+img{
+    vertical-align: bottom;
+    object-fit: cover;
+}
+.content{
+  padding-top: 0;
+}
+.cleafix:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    position: relative;
+}
+@media (max-width: 800px){
+    .sidebar.horizontal .item {
+        margin-bottom: 10px !important;
+    }
+}
+
+.popup-container .popup{
+    left: 50%;
+    margin-left: -200px;
+    top: 15%;
+}
+@media (max-width: 800px){
+    .popup-container .popup {
+        left: 0;
+        top:0;
+        margin-left: 0;
+    }
+}
+
+.model-wrap,.model-wrap-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/*members */
+.query-filters .form-menu-select .item:hover >ul{
+    display: block;
+}
+.query-filters .form-menu-list,.query-filters .form-menu-list>*{
+margin-top: 0 !important;
+}
+
+
+.item{position: relative}
+.user-summary {top: 95%;left: 5%;}
+.image-container{position: relative;width: 100%;}
+.model-card-filter{left: 0}
+.model-card-user{text-align: left}
+
+/*-----------------model--------------------*/
+.model-wrap,.model-wrap-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.model-loading{
+  position: absolute;
+  width: 100px !important;
+  left: 50%;
+  margin-left: -50px;
+  top: 55%;
+}
+#example{
+  width: 100%;
+  height:100%;
+}
+#example>canvas{
+  width: 100% !important;
+  height:100% !important;
+}
+#example>div{
+  display: none;
+}
+/*控制器*/
+.dg.main{
+  padding:3px 5px 10px;
+  background: rgba(0,0,0,.75);
+  border-radius: 12px;
+}
+.dg .cr{
+  line-height: 30px;
+  border-top: 1px solid #333333;
+  border-left: 0 !important;
+  border-radius: 5px;
+}
+.dg li.cr:hover{
+  background-color: #333 !important;
+}
+.dg .cr:first-of-type{
+  border-top:0
+}
+
+.dg .property-name{
+  display: inline-block;
+  width: 30% !important;
+  padding-left: 5px;
+}
+.dg .c{
+  display: inline-block;
+  width: 70% !important;
+}
+/*check*/
+.dg .c input[type=checkbox]{
+  height: 0;
+  border:0;
+  float: right;
+  position: relative;
+}
+.dg .c input[type=checkbox]:checked:after {
+  content: '\2714';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  color:#bbb;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1px 0 0 0;
+  vertical-align: text-top;
+}
+
+/*下拉列表*/
+.dg .c select{
+  margin-top: 4px !important;
+  font-size: 12px;
+  width: 100%;
+  padding: 1px 4px;
+  border: 1px solid #e9e9e9;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  box-shadow: inset 0 0 3px #a0a0a0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.dg .close-button{
+  display: none;
+}
